@@ -1,0 +1,23 @@
+input {
+  padding: 1rem 1.2rem;
+  margin: 1rem 0;
+  outline: none;
+}
+label {
+  margin-top: 1rem;
+}
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+span {
+  font-size: 1.2rem;
+  color: #d81629;
+  font-weight: bold;
+  display: none;
+}
+/*hara que aparezcan los mensajes span*/
+input:invalid ~ span {
+  display: block;
+}
