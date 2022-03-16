@@ -18,6 +18,9 @@ span {
   display: none;
 }
 /*hara que aparezcan los mensajes span*/
-input:invalid ~ span {
+input:invalid[focused="true"] {
+  border: 1px solid #d81629;
+}
+input:invalid[focused="true"] ~ span {
   display: block;
 }
